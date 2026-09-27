@@ -1,0 +1,13 @@
+{
+  "temperature": 0.55,
+  "flags": {
+    "cutoff_2": {
+      "label": "Moderate or worse",
+      "threshold": 0.28
+    },
+    "cutoff_3": {
+      "label": "Severe or worse",
+      "threshold": 0.29999999999999993
+    }
+  }
+}
