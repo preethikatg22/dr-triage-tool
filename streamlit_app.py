@@ -249,9 +249,9 @@ if uploaded is not None:
         processed, overlay, grade, confidence, probs, urgent, p_ge2 = predict(assets, img_rgb)
 
     col1, col2, col3 = st.columns(3)
-    col1.image(img_rgb, caption="Uploaded image", use_column_width=True)
-    col2.image(processed, caption="Preprocessed", use_column_width=True)
-    col3.image(overlay, caption="Grad-CAM (where the model is looking)", use_column_width=True)
+    col1.image(img_rgb, caption="Uploaded image", use_container_width=True)
+    col2.image(processed, caption="Preprocessed", use_container_width=True)
+    col3.image(overlay, caption="Grad-CAM (where the model is looking)", use_container_width=True)
 
     st.subheader(f"Predicted severity: {CLASS_NAMES[grade]} (grade {grade})")
     st.write(f"**Confidence:** {confidence:.1%} (calibrated)")
